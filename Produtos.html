@@ -1,101 +1,99 @@
-<html> 
-<meta charset="utf-8">
-
+<!DOCTYPE html>
+<html lang="pt-">
 <head>
- <img src="copera.jpg"width"50%" height="20% />   
- <h1 style="color:black;" align="middle">Cooperativa Felipe</h1>
- <title>COOPERATIVA FELIPE </title> 
-<style> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produtos - Cooperativa Felipe</title>
+  <style>
     body {
-        font-family:Arial, sans-serif;
-        margin:0;
-        padding: 0;
-        background-color:#f3f8f3;
-        color:#333;
-    
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
     }
-    header{
-        background-color:#2e7d32;
-        color:white;
-        padding: 1em;
-        text-align: center;
-    } 
-    nav {
-         background-color: #4caf50;
-         display: flex;
-         text-decoration: none;
-    }
-    nav a {
-            color: white;    
-            padding: 1em;
-            text-decoration: none;
-    }
-    nav a:hover{
-       background-color: #388e3c;
-    }
-    main {
-      max-width: 100px;
-      margin: auto;
-      padding: 2em;
-    }
-    selection{
-      margin-bottom: 2m;
-    } 
-    footer {
-        background-color:#2e7d32 ;
-        color:white;
-        text-align:center ;
-        padding: 1em;
 
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
- </style>
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .produto {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .produto img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
- <header>
-   <ul>
-     <a href="Inicio.html">Inicio<a><br />
-     <a href="Sobre.html">Sobre</a><br />
-     <a href="contactos.html">Contacto</a><br />
-     <a href="Produtos.html">Produtos</a><br />
-   </ul>
-   
 
+  <header>
+    <h1>Nossos Produtos</h1>
+    <p><a href="Inicio.html">← Voltar ao Início</a></p>
+  </header>
 
+  <main>
+    <div class="grid">
+      <div class="produto">
+        <img src="milho.jpg" alt="Milho">
+        <h3>Milho Orgânico</h3>
+        <p>Milho de alta qualidade, produzido com responsabilidade ambiental.</p>
+      </div>
 
+      <div class="produto">
+        <img src="tomate.jpg"Tomate">
+        <h3>Tomate Fresco</h3>
+        <p>Tomates cultivados em estufas, sem agrotóxicos.</p>
+      </div>
 
-     
- </header>    
-</div><!--background-->
-</body>
-<hr />
-  
-<b> NOSSOS PRODUTOS </b> 
-  
-<li > 
-     <li>SOJA $33,00</li> <img src="soja.jpg"  width="80px" height="80px"/>
-     <li>MILHO $30,00</li>  <img src="transferir.jpg" <width="80px" height="80px"/>
-     <li>AZEVÉM $22,00</li>    <img src="azevém.jpg" width="80px" height="80px"/>
-     <li>PULVERIZADOR $45.000</li>     <img src="Pulverizador.jpg" width="80px" height="80px"/>
-     <li>BOTINA $23,00</li>  <img src="botina.jpg" width="80px" height="80px"/>
-     <li>PÁ $10,00</li>   <img src="pa.jpg" width="80px" height="80px"/>
-     <li>CARRIOLA $12,00</li>   <img src="carriola.jpg" width="80px" height="80px"/>
-     <li>FOICE $7,00</li> <img src="foice.jpg" width="80px" height="80px"/>
-     <li>TRATOR $38.000</li> <img src="trator.jpg" width="80px" height="80px"/>  <ul />
- 
-<li/>
+      <div class="produto">
+        <img src="feijão.jpg"Feijão">
+        <h3>Feijão Carioca</h3>
+        <p>Alimento rico em proteínas, direto do campo para sua mesa.</p>
+      </div>
+    </div>
+  </main>
 
-<br />  
-</body>
-<hr /> 
-
-<head>
-
-
-</head>
-
-<footer>
-<p>&copy;2025 Cooperativa Felipe.todos os direitos reservados.</p>
-</footer>
+  <footer>
+    &copy; 2025 Cooperativa Felipe
+  </footer>
 </body>
 </html>
-

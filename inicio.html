@@ -1,95 +1,214 @@
-<html lang="pt">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport"  content="width=device-width, initial-scale=1.0"> 
-<img src="copera.jpg"width"50%" height="20% /> alt="Logo Cooperativa Felipe">
- <title>COOPERATIVA FELIPE </title>  
-<style> 
-    body {
-        font-family:Arial, sans-serif;
-        margin:0;
-        padding: 0;
-        background-color:#f3f8f3;
-        color:#333;
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cooperativa Felipe</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    header{
-        background-color:#2e7d32;
-        color:white;
-        padding: 1em;
-        text-align: center;
-    } 
-    nav {
-         background-color: #4caf50;
-         display: flex;
-         text-decoration: none;
-    }
-    nav a {
-            color: white;    
-            padding: 1em;
-            text-decoration: none;
-    }
-    nav a:hover{
-       background-color: #388e3c;
-    }
-    main {
-      max-width: 100px;
-      margin: auto;
-      padding: 2em;
-    }
-    selection{
-      margin-bottom: 2m;
-    } 
-    footer {
-        background-color:#2e7d32 ;
-        color:white;
-        text-align:center ;
-        padding: 1em;
 
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
     }
- </style>
+
+    header {
+      position: relative;
+      height: 500px;
+      overflow: hidden;
+    }
+
+    .banner img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .banner img.active {
+      opacity: 1;
+    }
+
+    .banner-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      background-color: rgba(0, 70, 32, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .banner-text h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .banner-text p {
+      font-size: 18px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: #2e7d32;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #a5d6a7;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #2e7d32;
+    }
+
+    .services {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .service-box {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .service-box:hover {
+      transform: scale(1.05);
+    }
+
+    .service-box img {
+      width: 50px;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background-color: #1b5e20;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .banner-text h1 {
+        font-size: 32px;
+      }
+
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
 </head>
 <body>
- <header>
-  <h1>Cooperativa Felipe</h1>
-  <p>Juntos pelo desenvolvimento sustentável</p>
-  </header>
- </div>   
-<nav>
-   <ul>
-      <ul>
-     <a href="Inicio.html">Inicio<a><br />
-     <a href="Sobre.html">Sobre</a><br />
-     <a href="contactos.html">Contacto</a><br />
-     <a href="Produtos.html">Produtos</a><br />
-   </ul>
-</nav>
+
+  <!-- Banner rotativo -->
+<header>
+  <div class="banner">
+    <img src="Banner.homem.jpg"Banner Cooperativa Felipe 1">
+    <img src="Banner.campo.jpg"Banner Cooperativa Felipe 2">
+    <img src="Banner.trigo.jpg"Banner Cooperativa Felipe 3">
+  </div>
+  <div class="banner-text">
+    <h1>Cooperativa Felipe</h1>
+    <p>Unindo forças, colhendo resultados.</p>
+  </div>
 </header>
 
-<main>
-<section class="hero">
-<h2>Bem-Vindo á Cooperativa Felipe</h2>
-<p> Conectando pessoas,ideias e oportunidades para crescer juntos.</p>
-</section>  
-</main>
+  <!-- Menu de navegação -->
+  <nav>
+    <a href="Sobre.html">Sobre</a>
+    <a href="contactos.html">contactos</a>
+    <a href="Produtos.html">Produtos</a>
+  </nav>
 
-<footer>
-<p>&copy; 2025 Cooperativa Felipe. Todos os direitos reservados.</p>
-</footer>
+  <!-- Seção Sobre -->
+  <section id="sobre">
+    <h2>Quem Somos</h2>
+    <p>A Cooperativa Felipe é uma união de produtores que acredita na força do trabalho coletivo para promover a agricultura sustentável, inovação e crescimento regional.</p>
+  </section>
+
+  <!-- Seção Serviços -->
+  <section id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="services">
+      <div class="service-box">
+        <img src="https://img.icons8.com/ios-filled/50/2e7d32/tractor.png" alt="Produção">
+        <h3>Produção Agrícola</h3>
+        <p>Assistência técnica e otimização da produção com foco em qualidade e sustentabilidade.</p>
+      </div>
+      <div class="service-box">
+        <img src="https://img.icons8.com/ios-filled/50/2e7d32/box.png" alt="Distribuição">
+        <h3>Distribuição</h3>
+        <p>Logística eficiente e comercialização de produtos dos cooperados em mercados locais e nacionais.</p>
+      </div>
+      <div class="service-box">
+        <img src="https://img.icons8.com/ios-filled/50/2e7d32/training.png" alt="Educação">
+        <h3>Educação Rural</h3>
+        <p>Treinamentos, capacitações e palestras para o crescimento dos membros da cooperativa.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <section id="contato">
+    <h2>Fale Conosco</h2>
+    <p>Email: contato@cooperativafelipe.com.pt<br>
+    Telefone: (00) 1234-5678</p>
+    <img src="instagram.png"
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Cooperativa Felipe - Todos os direitos reservados</p>
+  </footer>
+
+  <!-- JavaScript para rotação dos banners -->
+  <script>
+    const banners = document.querySelectorAll('.banner img');
+    let current = 0;
+
+    setInterval(() => {
+      banners[current].classList.remove('active');
+      current = (current + 1) % banners.length;
+      banners[current].classList.add('active');
+    }, 5000);
+  </script>
+
 </body>
-
 </html>
 
-
-
-
-     
- </header>    
-</div><!--background-->
-</body>
-<hr />
-</body>
-</html>
-
-
-</html>
